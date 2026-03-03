@@ -3,57 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>लूडो अड्डा - खेलो और जीतो</title>
+    <title>NK Adda Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #1a1a2e; color: white; text-align: center; margin: 0; padding: 15px; }
-        header { background: #e94560; padding: 20px; border-radius: 0 0 20px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
-        .card { background: #16213e; border: 2px solid #e94560; border-radius: 15px; padding: 20px; margin: 25px auto; max-width: 400px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-        .prize { font-size: 24px; color: #44ff62; font-weight: bold; }
-        .btn { background: #e94560; color: white; padding: 12px 25px; border: none; border-radius: 30px; cursor: pointer; font-size: 16px; font-weight: bold; text-decoration: none; display: inline-block; margin-top: 15px; width: 85%; }
-        .whatsapp { background: #25d366; margin-top: 10px; }
-        input { width: 85%; padding: 12px; margin: 10px 0; border-radius: 8px; border: none; background: #0f3460; color: white; border: 1px solid #1a1a2e; }
-        .rules { font-size: 14px; opacity: 0.8; margin-top: 15px; text-align: left; padding: 10px; }
+        body { background-color: #ffffff; font-family: 'Segoe UI', sans-serif; }
+        /* Professional Banner Style */
+        .hero-banner { width: 100%; border-radius: 0 0 30px 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        /* Sticky Bottom Button */
+        .sticky-footer { position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center; gap: 10px; padding: 0 20px; z-index: 100; }
+        .play-now-btn { background: linear-gradient(90deg, #ff1e56, #e94560); color: white; width: 80%; padding: 15px; border-radius: 12px; font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4); }
+        .support-btn { background: #e94560; color: white; padding: 15px; border-radius: 12px; width: 60px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+        /* Features Section */
+        .feature-tag { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: bold; color: #444; background: #f0f0f0; padding: 5px 12px; border-radius: 20px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>🏆 लूडो अड्डा 🏆</h1>
-    <p>डेली टूर्नामेंट्स - इंस्टेंट पेमेंट</p>
-</header>
-
-<div class="card">
-    <h3>महारानी बैटल #001</h3>
-    <p>एंट्री फीस: <b>₹20</b></p>
-    <p>विजेता को मिलेगा: <span class="prize">₹39</span></p>
-    <p>मैच का समय: <b>09:30 PM (आज)</b></p>
-    <hr style="border: 0.5px solid #0f3460;">
-    
-    upi :- 9636901446@fam
-    
-    <form id="regForm">
-        <input type="text" name="name" placeholder="आपका शुभ नाम" required>
-        <input type="number" name="phone" placeholder="व्हाट्सएप नंबर" required>
-        <input type="text" name="utr" placeholder="पेमेंट ट्रांजैक्शन ID" required>
-        <button type="submit" class="btn">रजिस्टर करें</button>
-    </form>
-    
-    <a href="https://wa.me" class="btn whatsapp">व्हाट्सएप पर सहायता लें</a>
-    
-    <div class="rules">
-        <b>नियम:</b><br>
-        1. मैच शुरू होने से 5 मिनट पहले रूम कोड मिलेगा।<br>
-        2. गलत स्क्रीनशॉट डालने पर आईडी ब्लॉक होगी।
+    <!-- Header with Logo -->
+    <div class="flex justify-between items-center p-4 border-b">
+        <i class="fas fa-bars text-xl text-gray-600"></i>
+        <img src="https://via.placeholder.com" class="h-10" alt="Logo">
+        <div class="flex items-center gap-1 text-blue-600 font-bold border-2 border-blue-600 px-2 py-1 rounded">
+            <i class="fas fa-info-circle"></i> निर्देश
+        </div>
     </div>
-</div>
 
-<script>
-    document.getElementById('regForm').onsubmit = function(e) {
-        e.preventDefault();
-        alert('बधाई हो! आपकी डिटेल्स भेज दी गई हैं। हम आपसे व्हाट्सएप पर संपर्क करेंगे।');
-        this.reset();
-    };
-</script>
+    <!-- Features Row -->
+    <div class="flex justify-around p-3 bg-gray-50">
+        <div class="feature-tag"><i class="fas fa-headset text-blue-500"></i> 24x7 SUPPORT</div>
+        <div class="feature-tag"><i class="fas fa-percentage text-green-500"></i> 3% COMMISSION</div>
+        <div class="feature-tag"><i class="fas fa-bolt text-yellow-500"></i> INSTANT WITHDRAWAL</div>
+    </div>
+
+    <!-- Main Hero Banner -->
+    <div class="p-4">
+        <img src="https://img.freepik.com" class="hero-banner" alt="Ludo Game">
+    </div>
+
+    <!-- Statistics Section (Optional) -->
+    <div class="text-center mt-4">
+        <p class="text-gray-500 text-sm font-semibold">India's Fastest Ludo Platform</p>
+        <h2 class="text-2xl font-black text-gray-800">चलो खेलें और जीतें!</h2>
+    </div>
+
+    <!-- Sticky Bottom Navigation -->
+    <div class="sticky-footer">
+        <button class="play-now-btn" onclick="location.href='#games'">
+            <i class="fas fa-gamepad"></i> अब खेलते हैं
+        </button>
+        <button class="support-btn">
+            <i class="fas fa-headset"></i>
+        </button>
+    </div>
 
 </body>
 </html>
