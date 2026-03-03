@@ -1,1 +1,55 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>लूडो अड्डा - NK स्टाइल</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #ffffff; margin: 0; padding-bottom: 100px; }
+        .feature-box { background: #f9fafb; border: 1px solid #e5e7eb; padding: 10px; border-radius: 12px; text-align: center; width: 30%; font-size: 11px; font-weight: bold; }
+        .sticky-footer { position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center; gap: 10px; padding: 0 15px; z-index: 100; }
+        .play-btn { background: linear-gradient(90deg, #ff1e56, #e94560); color: white; width: 80%; padding: 15px; border-radius: 12px; font-weight: bold; font-size: 18px; box-shadow: 0 5px 20px rgba(233, 69, 96, 0.4); text-align: center; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="flex justify-between items-center p-4 border-b">
+        <h1 class="text-xl font-black text-gray-800 tracking-tighter">लूडो टूर्नामेंट</h1>
+        <button class="border-2 border-blue-600 text-blue-600 px-3 py-1 rounded-md font-bold text-sm">निर्देश</button>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="flex justify-between p-4 gap-2">
+        <div class="feature-box"><i class="fas fa-headset text-blue-500 mb-1"></i><br>24x7 सहायता</div>
+        <div class="feature-box"><i class="fas fa-percentage text-green-500 mb-1"></i><br>3% कमीशन</div>
+        <div class="feature-box"><i class="fas fa-bolt text-yellow-500 mb-1"></i><br>तत्काल निकासी</div>
+    </div>
+
+    <!-- Banner -->
+    <div class="p-4">
+        <div class="bg-gray-100 rounded-3xl h-52 flex flex-col items-center justify-center border-2 border-dashed border-gray-300 relative overflow-hidden">
+            <i class="fas fa-gamepad text-6xl text-gray-300 mb-2"></i>
+            <span class="text-gray-400 font-bold">LUDO GAME BANNER</span>
+            <!-- Yahan aap apni image ka link bhi daal sakte hain -->
+        </div>
+    </div>
+
+    <!-- Text Info -->
+    <div class="text-center px-6 mt-4">
+        <p class="text-gray-500 text-sm font-semibold tracking-wide uppercase">भारत का सबसे तेज़ लूडो प्लेटफॉर्म</p>
+        <h2 class="text-3xl font-black text-gray-900 mt-1">चलो खेलें और जीतें!</h2>
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="sticky-footer">
+        <a href="https://wa.me" class="play-btn">
+            <i class="fas fa-play mr-2"></i> अब खेलते हैं
+        </a>
+    </div>
+
+</body>
+</html>
