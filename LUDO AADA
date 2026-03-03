@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDO ADDA - Khelo aur Jeeto</title>
+    <style>
+        :root { --primary: #e94560; --bg: #1a1a2e; --card: #16213e; --text: #ffffff; }
+        body { font-family: sans-serif; background: var(--bg); color: var(--text); margin: 0; text-align: center; }
+        header { background: var(--primary); padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .container { padding: 20px; max-width: 500px; margin: auto; }
+        .match-card { background: var(--card); border-radius: 15px; padding: 20px; margin: 20px 0; border: 1px solid #e94560; }
+        .prize { font-size: 24px; color: #44ff62; font-weight: bold; }
+        .btn { background: var(--primary); color: white; padding: 12px 25px; border: none; border-radius: 30px; cursor: pointer; font-size: 16px; font-weight: bold; text-decoration: none; display: inline-block; margin: 10px 0; }
+        .btn-whatsapp { background: #25d366; }
+        input { width: 90%; padding: 12px; margin: 10px 0; border-radius: 8px; border: none; background: #0f3460; color: white; }
+        #regForm { display: none; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🏆 LUDO ADDA 🏆</h1>
+    <p>India ka Sabse Best Ludo Tournament</p>
+</header>
+
+<div class="container">
+    <!-- Match Detail -->
+    <div class="match-card">
+        <h2>Daily Mega Battle #101</h2>
+        <p>Entry Fee: <b>₹20</b></p>
+        <p>Win Prize: <span class="prize">₹35</span></p>
+        <p>Match Time: <b>09:00 PM (Aaj)</b></p>
+        <button class="btn" onclick="document.getElementById('regForm').style.display='block'">Join Match Now</button>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="regForm" class="match-card">
+        <h3>📝 Join Karein</h3>
+        <p>Step 1: Pay <b>₹20</b> on UPI: 9636901446@fam
+        <form action="https://formspree.io" method="POST">
+            <input type="text" name="name" placeholder="Aapka Naam" required>
+            <input type="number" name="phone" placeholder="WhatsApp Number" required>
+            <input type="text" name="utr" placeholder="Transaction ID (UTR)" required>
+            <button type="submit" class="btn">Submit Details</button>
+        </form>
+    </div>
+
+    <!-- 9875840216 -->
+    <div class="match-card">
+        <h3>📞 Support</h3>
+        <p>Koi dikkat ho toh WhatsApp karein</p>
+        <a href="https://wa.me" class="btn btn-whatsapp">WhatsApp Chat</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 LUDO ADDA - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
